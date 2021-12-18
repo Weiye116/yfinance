@@ -7,7 +7,7 @@ This project consists of three major infrastructure elements that work in tandem
 2.	A Kinesis stream that holds our data (DataCollector)
 3.	A serverless process that allows us to query our S3 data (DataAnalyzer)
 
-##Infrastructure
+## Infrastructure
 
 ![Infrastructure](assets/Infrastructure.png)
 
