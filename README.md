@@ -1,25 +1,15 @@
 # Streaming Finance Data with AWS Lambda
 
-This project aims to provision Lambda functions to generate near real time finance data records for downstream processing and interactive querying. 
-
-Lambda URL: https://pugc7ko1ba.execute-api.us-east-2.amazonaws.com/default/STA9760-P3-DataCollector
-
-## Technologies
-
-- AWS Lambda
-- AWS Kinesis
-- AWS S3
-- AWS Glue
-- AWS Athena
-
-## Infrastructure
+For this project, I used a Lambda function to generate near real time finance data records for interactive querying. 
 
 This project consists of three major infrastructure elements that work in tandem:
-- A lambda function that collects our data (DataCollector)
-- A lambda function that transforms and places data into S3 (DataTransformer)
-- A serverless process that allows us to query our s3 data (DataAnalyzer)
+1.	A lambda function that gathers our data (DataTransformer)
+2.	A Kinesis stream that holds our data (DataCollector)
+3.	A serverless process that allows us to query our S3 data (DataAnalyzer)
 
-![Infrastructure](https://github.com/JackJoeng/Streaming-Finance-Data-with-AWS-Lambda/blob/master/assets/infrastructure.png?raw=true)
+##Infrastructure
+
+![Infrastructure](assets/Infrastructure.png)
 
 
 In the collector lambda, using the yfinance module ([documentation ](https://github.com/ranaroussi/yfinance)here), I grabbed one full day’s worth of stock HIGH and LOW prices for each company listed above on Thursday, May 14th 2020, at an one minute interval. Note that by “full day” we mean one day of stock trading, which is not 24 hours.
