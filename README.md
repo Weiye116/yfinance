@@ -16,7 +16,7 @@ First, I created a Kinesis Delivery Stream. The process is the following:
 2.Create delivery stream
 3.Create a new S3 bucket
 
-## Kinesis Configuration Page
+Kinesis Configuration Page:
 ![kinesis_config](assets/kinesis_config.png)
 
 ## Data Transformation
