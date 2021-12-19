@@ -50,7 +50,7 @@ In Athena, I wrote and ran a query that gives us the highest hourly stock “hig
 
 ![Athena](assets/Athena.png)
 
-S3 data that system collected and stored is shown as below:
+S3 data that system collected and stored is shown as below: (The data is generated into different folders based on datetime)
 ![screenshot_of_s3_bucket](assets/screenshot_of_s3_bucket.png)
 
 For the further Data Analysis, we can download the file from Athena query and generate interesting graphs and other visualizations from it.
