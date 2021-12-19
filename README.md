@@ -46,7 +46,7 @@ After all preparation work is done, I began to write code that programmatically 
 The Kinesis delivery stream push the data to S3 bucket which allow us to do analyze for the further Data Analysis.
 
 ## Data Analysis
-In Athena, I wrote and ran a query that gives us the highest hourly stock “high” per company from the data collected in S3 bucket.
+In Athena, I wrote and ran a query that gives us the highest and lowest hourly stock price per company from the data collected in S3 bucket.
 
 ![Athena](assets/Athena.png)
 
